@@ -42,7 +42,7 @@ Steps to run the code
 
 1. Clone the Repository
    ```bash
-   https://github.com/vishesh1802/HospitalManagementSystem.git
+   git clone https://github.com/vishesh1802/HospitalManagementSystem.git
    cd HospitalManagementSystem
    ```
 
