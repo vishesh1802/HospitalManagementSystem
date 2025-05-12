@@ -1,0 +1,135 @@
+Username,Role,Action,Login Time,Action Time
+W3PHXNA,nurse,Count Visits,2025-05-11 22:19:16,2025-05-11 22:19:18
+W3PHXNA,nurse,View Note,2025-05-11 22:19:16,2025-05-11 22:19:46
+W3PHXNA,nurse,Exit,2025-05-11 22:19:16,2025-05-11 22:21:46
+W3PHXNA,nurse,Count Visits,2025-05-11 22:22:07,2025-05-11 22:22:10
+W3PHXNA,nurse,Exit,2025-05-11 22:22:07,2025-05-11 22:24:14
+W3PHXNA,nurse,Count Visits,2025-05-11 22:24:40,2025-05-11 22:24:42
+W3PHXNA,nurse,Count Visits,2025-05-11 22:26:36,2025-05-11 22:26:37
+W3PHXNA,nurse,View Note,2025-05-11 22:26:36,2025-05-11 22:26:54
+W3PHXNA,nurse,Exit,2025-05-11 22:26:36,2025-05-11 22:27:47
+nurse_jane,nurse,Count Visits,2025-05-11 22:29:12,2025-05-11 22:29:15
+nurse_jane,nurse,Exit,2025-05-11 22:29:12,2025-05-11 22:29:57
+W3PHXNA,nurse,Count Visits,2025-05-11 22:31:10,2025-05-11 22:31:12
+W3PHXNA,nurse,Exit,2025-05-11 22:31:10,2025-05-11 22:32:14
+nurse_jane,nurse,Count Visits,2025-05-11 22:33:05,2025-05-11 22:33:06
+nurse_jane,nurse,View Note,2025-05-11 22:33:05,2025-05-11 22:33:20
+nurse_jane,nurse,Exit,2025-05-11 22:33:05,2025-05-11 22:38:12
+W3PHXNA,nurse,Count Visits,2025-05-11 22:41:30,2025-05-11 22:41:32
+nurse_jane,nurse,Count Visits,2025-05-11 22:44:44,2025-05-11 22:44:46
+nurse_jane,nurse,Exit,2025-05-11 22:44:44,2025-05-11 22:48:05
+nurse_jane,nurse,Count Visits,2025-05-11 22:48:21,2025-05-11 22:48:24
+nurse_jane,nurse,Count Visits,2025-05-11 22:48:21,2025-05-11 22:48:34
+nurse_jane,nurse,View Note,2025-05-11 22:48:21,2025-05-11 22:48:36
+nurse_jane,nurse,Exit,2025-05-11 22:48:21,2025-05-11 22:50:27
+nurse_jane,nurse,Count Visits,2025-05-11 22:50:48,2025-05-11 22:50:50
+nurse_jane,nurse,Exit,2025-05-11 22:50:48,2025-05-11 22:52:15
+nurse_jane,nurse,Count Visits,2025-05-11 22:52:44,2025-05-11 22:52:45
+nurse_jane,nurse,Exit,2025-05-11 22:52:44,2025-05-11 22:54:55
+nurse_jane,nurse,Count Visits,2025-05-11 22:55:18,2025-05-11 22:55:20
+nurse_jane,nurse,View Note,2025-05-11 22:55:18,2025-05-11 22:55:37
+nurse_jane,nurse,Exit,2025-05-11 22:55:18,2025-05-11 22:57:12
+nurse_jane,nurse,Count Visits,2025-05-11 22:57:26,2025-05-11 22:57:27
+nurse_jane,nurse,Count Visits,2025-05-11 22:57:26,2025-05-11 22:57:42
+nurse_jane,nurse,View Note,2025-05-11 22:57:26,2025-05-11 22:58:00
+nurse_jane,nurse,Exit,2025-05-11 22:57:26,2025-05-11 23:01:13
+W3PHXNA,nurse,Count Visits,2025-05-11 23:01:34,2025-05-11 23:01:39
+W3PHXNA,nurse,View Note,2025-05-11 23:01:34,2025-05-11 23:01:49
+W3PHXNA,nurse,Retrieve Patient,2025-05-11 23:01:34,2025-05-11 23:02:39
+nurse_jane,nurse,Retrieve Patient,2025-05-11 23:03:28,2025-05-11 23:03:29
+nurse_jane,nurse,Exit,2025-05-11 23:03:28,2025-05-11 23:04:25
+nurse_jane,nurse,View Note,2025-05-11 23:04:38,2025-05-11 23:04:43
+nurse_jane,nurse,Exit,2025-05-11 23:04:38,2025-05-11 23:06:40
+nurse_jane,nurse,View Note,2025-05-11 23:06:55,2025-05-11 23:06:56
+nurse_jane,nurse,Exit,2025-05-11 23:06:55,2025-05-11 23:07:44
+nurse_jane,nurse,Retrieve Patient,2025-05-11 23:08:00,2025-05-11 23:08:01
+nurse_jane,nurse,Exit,2025-05-11 23:08:00,2025-05-11 23:09:47
+nurse_jane,nurse,Retrieve Patient,2025-05-11 23:10:00,2025-05-11 23:10:01
+nurse_jane,nurse,Exit,2025-05-11 23:10:00,2025-05-11 23:11:05
+nurse_jane,nurse,Retrieve Patient,2025-05-11 23:11:17,2025-05-11 23:11:18
+nurse_jane,nurse,Retrieve Patient,2025-05-11 23:11:17,2025-05-11 23:11:48
+nurse_jane,nurse,Count Visits,2025-05-11 23:11:17,2025-05-11 23:12:04
+nurse_jane,nurse,Exit,2025-05-11 23:11:17,2025-05-11 23:16:20
+nurse_jane,nurse,Count Visits,2025-05-11 23:18:40,2025-05-11 23:18:41
+nurse_jane,nurse,Retrieve Patient,2025-05-11 23:18:40,2025-05-11 23:18:50
+nurse_jane,nurse,Count Visits,2025-05-11 23:18:40,2025-05-11 23:19:50
+nurse_jane,nurse,View Note,2025-05-11 23:18:40,2025-05-11 23:19:54
+nurse_jane,nurse,Retrieve Patient,2025-05-12 11:35:14,2025-05-12 11:35:21
+nurse_jane,nurse,Retrieve Patient,2025-05-12 11:35:47,2025-05-12 11:35:49
+nurse_jane,nurse,Count Visits,2025-05-12 11:35:47,2025-05-12 11:35:56
+nurse_jane,nurse,View Note,2025-05-12 11:35:47,2025-05-12 11:36:07
+nurse_jane,nurse,Add Patient,2025-05-12 11:35:47,2025-05-12 11:36:17
+nurse_jane,nurse,Remove Patient,2025-05-12 11:35:47,2025-05-12 11:36:47
+nurse_jane,nurse,Exit,2025-05-12 11:35:47,2025-05-12 11:37:39
+nurse_jane,nurse,Count Visits,2025-05-12 11:37:57,2025-05-12 11:37:59
+nurse_jane,nurse,View Note,2025-05-12 11:37:57,2025-05-12 11:38:33
+nurse_jane,nurse,Exit,2025-05-12 11:37:57,2025-05-12 11:39:23
+nurse_jane,nurse,Count Visits,2025-05-12 11:43:24,2025-05-12 11:43:27
+nurse_jane,nurse,Exit,2025-05-12 11:43:24,2025-05-12 11:44:20
+nurse_jane,nurse,Count Visits,2025-05-12 11:44:38,2025-05-12 11:44:39
+nurse_jane,nurse,Exit,2025-05-12 11:44:38,2025-05-12 11:48:40
+nurse_jane,nurse,Count Visits,2025-05-12 11:48:59,2025-05-12 11:49:00
+nurse_jane,nurse,View Note,2025-05-12 11:48:59,2025-05-12 11:49:10
+nurse_jane,nurse,Retrieve Patient,2025-05-12 11:48:59,2025-05-12 11:49:34
+nurse_jane,nurse,Add Patient,2025-05-12 11:48:59,2025-05-12 11:49:48
+nurse_jane,nurse,Retrieve Patient,2025-05-12 11:48:59,2025-05-12 11:53:19
+nurse_jane,nurse,Remove Patient,2025-05-12 11:48:59,2025-05-12 11:53:35
+nurse_jane,nurse,Exit,2025-05-12 11:48:59,2025-05-12 11:54:40
+nurse_jane,nurse,Add Patient,2025-05-12 11:54:58,2025-05-12 11:54:59
+nurse_jane,nurse,Count Visits,2025-05-12 11:54:58,2025-05-12 11:56:03
+nurse_jane,nurse,Retrieve Patient,2025-05-12 11:54:58,2025-05-12 11:56:06
+nurse_jane,nurse,Remove Patient,2025-05-12 11:54:58,2025-05-12 11:56:17
+nurse_jane,nurse,Exit,2025-05-12 11:54:58,2025-05-12 11:56:56
+USOOUA9,management,Generate Statistics,2025-05-12 11:57:13,2025-05-12 11:57:14
+USOOUA9,management,Exit,2025-05-12 11:57:13,2025-05-12 12:04:40
+nurse_jane,nurse,Add Patient,2025-05-12 12:05:00,2025-05-12 12:05:01
+nurse_jane,nurse,Exit,2025-05-12 12:05:00,2025-05-12 12:07:27
+nurse_jane,nurse,Exit,2025-05-12 12:05:00,2025-05-12 12:07:28
+nurse_jane,nurse,Exit,2025-05-12 12:05:00,2025-05-12 12:07:29
+nurse_jane,nurse,Exit,2025-05-12 12:05:00,2025-05-12 12:07:29
+nurse_jane,nurse,Exit,2025-05-12 12:05:00,2025-05-12 12:07:30
+nurse_jane,nurse,Remove Patient,2025-05-12 12:40:42,2025-05-12 12:40:53
+nurse_jane,nurse,Count Visits,2025-05-12 12:40:42,2025-05-12 12:41:04
+nurse_jane,nurse,View Note,2025-05-12 12:40:42,2025-05-12 12:41:13
+nurse_jane,nurse,Retrieve Patient,2025-05-12 12:40:42,2025-05-12 12:41:23
+nurse_jane,nurse,Exit,2025-05-12 12:40:42,2025-05-12 12:41:45
+32HEOJI,management,Generate Statistics,2025-05-12 12:42:04,2025-05-12 12:42:06
+32HEOJI,management,Exit,2025-05-12 12:42:04,2025-05-12 15:24:03
+32HEOJI,management,Generate Statistics,2025-05-12 15:24:41,2025-05-12 15:24:43
+32HEOJI,management,Count Visits,2025-05-12 15:24:41,2025-05-12 15:27:01
+32HEOJI,management,Count Visits,2025-05-12 15:24:41,2025-05-12 15:27:46
+32HEOJI,management,Exit,2025-05-12 15:24:41,2025-05-12 15:27:49
+nurse_jane,nurse,Retrieve Patient,2025-05-12 15:28:07,2025-05-12 15:28:08
+nurse_jane,nurse,Retrieve Patient,2025-05-12 15:28:07,2025-05-12 15:28:36
+nurse_jane,nurse,Add Patient,2025-05-12 15:28:07,2025-05-12 15:28:53
+nurse_jane,nurse,Retrieve Patient,2025-05-12 15:28:07,2025-05-12 15:30:05
+nurse_jane,nurse,Remove Patient,2025-05-12 15:28:07,2025-05-12 15:30:11
+nurse_jane,nurse,Exit,2025-05-12 15:28:07,2025-05-12 15:30:24
+3WR4D3L,admin,Generate Statistics,2025-05-12 15:30:46,2025-05-12 15:30:47
+3WR4D3L,admin,Generate Statistics,2025-05-12 15:34:49,2025-05-12 15:34:51
+3WR4D3L,admin,Generate Statistics,2025-05-12 15:34:49,2025-05-12 15:34:53
+3WR4D3L,admin,Exit,2025-05-12 15:34:49,2025-05-12 15:35:48
+3WR4D3L,admin,Generate Statistics,2025-05-12 15:36:08,2025-05-12 15:36:09
+3WR4D3L,admin,Exit,2025-05-12 15:36:08,2025-05-12 15:36:40
+P444WFB,management,Generate Statistics,2025-05-12 15:37:00,2025-05-12 15:37:02
+P444WFB,management,Generate Statistics,2025-05-12 15:37:00,2025-05-12 15:38:31
+P444WFB,management,Count Visits,2025-05-12 15:37:00,2025-05-12 15:38:34
+P444WFB,management,Generate Statistics,2025-05-12 15:37:00,2025-05-12 17:09:11
+P444WFB,management,Count Visits,2025-05-12 15:37:00,2025-05-12 17:09:26
+P444WFB,management,Exit,2025-05-12 15:37:00,2025-05-12 17:18:09
+nurse_jane,nurse,Count Visits,2025-05-12 17:18:27,2025-05-12 17:18:31
+nurse_jane,nurse,Retrieve Patient,2025-05-12 17:18:27,2025-05-12 17:18:41
+nurse_jane,nurse,View Note,2025-05-12 17:18:27,2025-05-12 17:18:49
+nurse_jane,nurse,Add Patient,2025-05-12 17:18:27,2025-05-12 17:19:06
+nurse_jane,nurse,Count Visits,2025-05-12 17:18:27,2025-05-12 17:20:08
+nurse_jane,nurse,View Note,2025-05-12 17:18:27,2025-05-12 17:22:40
+nurse_jane,nurse,Remove Patient,2025-05-12 17:18:27,2025-05-12 17:22:46
+nurse_jane,nurse,Count Visits,2025-05-12 18:19:12,2025-05-12 18:19:15
+nurse_jane,nurse,Retrieve Patient,2025-05-12 18:19:12,2025-05-12 18:19:24
+nurse_jane,nurse,Exit,2025-05-12 18:19:12,2025-05-12 18:20:55
+nurse_jane,nurse,Count Visits,2025-05-12 18:21:23,2025-05-12 18:21:25
+nurse_jane,nurse,Exit,2025-05-12 18:21:23,2025-05-12 18:21:31
+HMFXKQ9,management,Generate Statistics,2025-05-12 18:21:50,2025-05-12 18:21:51
+HMFXKQ9,management,Generate Statistics,2025-05-12 18:21:50,2025-05-12 18:22:15
+HMFXKQ9,management,Exit,2025-05-12 18:21:50,2025-05-12 18:22:49
+nurse_jane,nurse,Retrieve Patient,2025-05-12 18:23:06,2025-05-12 18:23:08
