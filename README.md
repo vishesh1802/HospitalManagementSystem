@@ -41,7 +41,10 @@ Repository Structure
 Steps to run the code
 
 1. Clone the Repository
-
+   ```bash
+   https://github.com/vishesh1802/HospitalManagementSystem.git
+   cd HospitalManagementSystem
+   ```
 
 2. Set up the Python Environment
    ``` bash
