@@ -1,4 +1,5 @@
 
+from calendar import month
 import csv
 import datetime
 import os
@@ -144,7 +145,7 @@ class PatientManagementSystem:
 
     def add_visit_gui(self,
                       patient_id, visit_time, dept_name, gender, race,
-                      age, ethnicity, insurance, zip_code, complaint):
+                      age, ethnicity, insurance, zip_code, complaint,note_id=None, note_type=None, note_text=""):
         pid = patient_id.strip()
         if pid not in self.patients:
             self.patients[pid] = Patient(pid)
@@ -163,11 +164,16 @@ class PatientManagementSystem:
 
         self.patients[pid].add_visit(visit)
         self.departments[dept_name].add_patient(self.patients[pid])
+        # Add note if provided
+        if note_id and note_text:
+            note = Note(note_id=note_id, visit_id=visit.visit_id, note_text=note_text)
+            note.note_type = note_type  
+            self.patients[pid].add_note(note)
 
         fieldnames = [
             'Patient_ID','Visit_ID','Visit_time','Visit_department',
-            'Gender','Race','Age','Ethnicity',
-            'Insurance','Zip_code','Chief_complaint'
+            'Race','Gender','Ethnicity','Age',
+            'Zip_code','Insurance','Chief_complaint', 'Note_ID', 'Note_type'
         ]
         with open(self.input_path, 'a', newline='') as f:
             writer = csv.DictWriter(f, fieldnames=fieldnames)
@@ -176,13 +182,15 @@ class PatientManagementSystem:
                 'Visit_ID': visit.visit_id,
                 'Visit_time': visit_time,
                 'Visit_department': dept_name,
-                'Gender': gender,
                 'Race': race,
-                'Age': age,
+                'Gender': gender,
                 'Ethnicity': ethnicity,
-                'Insurance': insurance,
+                'Age': age,
                 'Zip_code': zip_code,
-                'Chief_complaint': complaint
+                'Insurance': insurance,
+                'Chief_complaint': complaint,
+                'Note_ID': note_id if note_id else "",
+                'Note_type': note_type if note_type else ""
             })
 
     def remove_patient(self, patient_id: str):
@@ -199,8 +207,6 @@ class PatientManagementSystem:
             for row in rows:
                 if row['Patient_ID'].strip() != pid:
                     writer.writerow(row)
-
-    
 
     def generate_statistics(self):
         from collections import Counter
@@ -236,7 +242,7 @@ class PatientManagementSystem:
         fig, axs = plt.subplots(2, 2, figsize=(14, 10))
         fig.suptitle("Hospital Visit Statistics", fontsize=18)
 
-        #  Department Distribution [0,0]
+        # 1) Department Distribution [0,0]
         if department_counter:
             labels_dept, vals_dept = zip(*sorted(department_counter.items(), key=lambda x: x[1], reverse=True))
             axs[0, 0].barh(labels_dept, vals_dept, color="mediumslateblue")
@@ -245,7 +251,7 @@ class PatientManagementSystem:
             axs[0, 0].invert_yaxis()
             axs[0, 0].grid(axis="x", linestyle="--", alpha=0.5)
 
-        # Insurance Distribution as Donut [0,1]
+        # 2) Insurance Distribution as Donut [0,1]
         if insurance_counter:
             labels_ins, vals_ins = zip(*insurance_counter.items())
             wedges, texts, autotexts = axs[0, 1].pie(vals_ins, labels=labels_ins, autopct="%1.1f%%", startangle=140)
@@ -253,7 +259,7 @@ class PatientManagementSystem:
             axs[0, 1].add_artist(centre_circle)
             axs[0, 1].set_title("Insurance Distribution (Donut)")
 
-        # Gender Distribution [1,0]
+        # 3) Gender Distribution [1,0]
         if gender_counter:
             labels_gen, vals_gen = zip(*gender_counter.items())
             axs[1, 0].bar(labels_gen, vals_gen, color="orange")
@@ -261,7 +267,7 @@ class PatientManagementSystem:
             axs[1, 0].set_ylabel("Count")
             axs[1, 0].grid(axis="y", linestyle="--", alpha=0.5)
 
-        # Age Group Distribution [1,1]
+        # 4) Age Group Distribution [1,1]
         if age_groups:
             labels_age, vals_age = zip(*age_groups.items())
             axs[1, 1].bar(labels_age, vals_age, color="seagreen")
@@ -274,3 +280,4 @@ class PatientManagementSystem:
         plt.close(fig)
 
         print("Chart saved to output/visit_stats.png.")
+

@@ -116,14 +116,17 @@ class PatientManagementApp:
                 return
             vt = simpledialog.askstring("Add Patient", "Enter Visit Date (YYYY-MM-DD):")
             dept = simpledialog.askstring("Add Patient", "Enter Department:")
-            gender = simpledialog.askstring("Add Patient", "Enter Gender:")
             race = simpledialog.askstring("Add Patient", "Enter Race:")
-            age = simpledialog.askinteger("Add Patient", "Enter Age:")
+            gender = simpledialog.askstring("Add Patient", "Enter Gender:")
             ethnicity = simpledialog.askstring("Add Patient", "Enter Ethnicity:")
-            insurance = simpledialog.askstring("Add Patient", "Enter Insurance:")
+            age = simpledialog.askinteger("Add Patient", "Enter Age:")
             zip_code = simpledialog.askstring("Add Patient", "Enter Zip Code:")
+            insurance = simpledialog.askstring("Add Patient", "Enter Insurance:")
             complaint = simpledialog.askstring("Add Patient", "Enter Chief Complaint:")
 
+            note_id = simpledialog.askstring("Input", "Enter Note ID (optional):")
+            note_type = simpledialog.askstring("Input", "Enter Note Type (optional):")
+            note_text = simpledialog.askstring("Input", "Enter Note Text (optional):")
             try:
                 datetime.datetime.strptime(vt.strip(), "%Y-%m-%d")
             except:
@@ -133,7 +136,8 @@ class PatientManagementApp:
             self.system.add_visit_gui(
                 pid, vt.strip(), dept.strip(), gender.strip(),
                 race.strip(), age, ethnicity.strip(),
-                insurance.strip(), zip_code.strip(), complaint.strip()
+                insurance.strip(), zip_code.strip(), complaint.strip(),note_id.strip(),
+                note_type.strip(), note_text.strip()
             )
             self.display_result(f"Added visit for {pid} on {vt}.")
 
