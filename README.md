@@ -56,6 +56,8 @@ Steps to run the code
 3. Run the GUI
    ```bash
    python src/ui_patient_management.py
+   or
+   python src/main.py
    ```
 
 4. Interact with the login screen
