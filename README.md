@@ -86,3 +86,9 @@ Project Description:
   Statistics: Generates statistics for specific user.
 
   Logging: Appends user actions to output/usage_log.csv.
+
+
+  Github link:
+  ```bash
+   https://github.com/vishesh1802/HospitalManagementSystem
+```
