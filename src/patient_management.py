@@ -205,6 +205,7 @@ class PatientManagementSystem:
     def generate_statistics(self):
         from collections import Counter
         import matplotlib.pyplot as plt
+        from datetime import datetime
 
         # Aggregate data
         date_counter = Counter()
@@ -219,6 +220,11 @@ class PatientManagementSystem:
 
         for patient in self.patients.values():
             for visit in patient.visits:
+                try:
+                    datetime.strptime(visit.visit_time.strip(), "%Y-%m-%d")
+                except ValueError:
+                    continue
+
                 date_counter[visit.visit_time] += 1
                 insurance_counter[visit.insurance] += 1
                 gender_counter[visit.gender] += 1
@@ -230,37 +236,41 @@ class PatientManagementSystem:
         fig, axs = plt.subplots(2, 2, figsize=(14, 10))
         fig.suptitle("Hospital Visit Statistics", fontsize=18)
 
-        # Visits by Date
-        dates, counts = zip(*sorted(date_counter.items()))
-        axs[0, 0].bar(dates, counts)
-        axs[0, 0].set_title("Visits by Date")
-        axs[0, 0].tick_params(axis="x", rotation=45)
-        axs[0, 0].set_ylabel("Count")
-        axs[0, 0].grid(True, linestyle="--", alpha=0.5)
+        #  Department Distribution [0,0]
+        if department_counter:
+            labels_dept, vals_dept = zip(*sorted(department_counter.items(), key=lambda x: x[1], reverse=True))
+            axs[0, 0].barh(labels_dept, vals_dept, color="mediumslateblue")
+            axs[0, 0].set_title("Department Visit Frequency")
+            axs[0, 0].set_xlabel("Number of Visits")
+            axs[0, 0].invert_yaxis()
+            axs[0, 0].grid(axis="x", linestyle="--", alpha=0.5)
 
-        # Insurance Distribution
-        labels_ins, vals_ins = zip(*insurance_counter.items())
-        axs[0, 1].pie(vals_ins, labels=labels_ins, autopct="%1.1f%%", startangle=140)
-        axs[0, 1].set_title("Insurance Breakdown")
+        # Insurance Distribution as Donut [0,1]
+        if insurance_counter:
+            labels_ins, vals_ins = zip(*insurance_counter.items())
+            wedges, texts, autotexts = axs[0, 1].pie(vals_ins, labels=labels_ins, autopct="%1.1f%%", startangle=140)
+            centre_circle = plt.Circle((0, 0), 0.70, fc='white')
+            axs[0, 1].add_artist(centre_circle)
+            axs[0, 1].set_title("Insurance Distribution (Donut)")
 
-        # Gender Distribution
-        labels_gen, vals_gen = zip(*gender_counter.items())
-        axs[1, 0].bar(labels_gen, vals_gen)
-        axs[1, 0].set_title("Gender Distribution")
-        axs[1, 0].set_ylabel("Count")
-        axs[1, 0].grid(axis="y", linestyle="--", alpha=0.5)
+        # Gender Distribution [1,0]
+        if gender_counter:
+            labels_gen, vals_gen = zip(*gender_counter.items())
+            axs[1, 0].bar(labels_gen, vals_gen, color="orange")
+            axs[1, 0].set_title("Gender Distribution")
+            axs[1, 0].set_ylabel("Count")
+            axs[1, 0].grid(axis="y", linestyle="--", alpha=0.5)
 
-        # Age Group Distribution
-        labels_age, vals_age = zip(*age_groups.items())
-        axs[1, 1].bar(labels_age, vals_age)
-        axs[1, 1].set_title("Age Group Distribution")
-        axs[1, 1].grid(axis="y", linestyle="--", alpha=0.5)
+        # Age Group Distribution [1,1]
+        if age_groups:
+            labels_age, vals_age = zip(*age_groups.items())
+            axs[1, 1].bar(labels_age, vals_age, color="seagreen")
+            axs[1, 1].set_title("Age Group Distribution")
+            axs[1, 1].grid(axis="y", linestyle="--", alpha=0.5)
 
         # Final layout and save
         plt.tight_layout(rect=[0, 0.03, 1, 0.95])
         plt.savefig("output/visit_stats.png")
         plt.close(fig)
 
-        print("Chart saved to visit_stats.png.")
-
-       
+        print("Chart saved to output/visit_stats.png.")
