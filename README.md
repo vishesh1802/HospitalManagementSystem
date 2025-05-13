@@ -96,3 +96,4 @@ Project Description:
   ```bash
    https://github.com/vishesh1802/HospitalManagementSystem
 ```
+UML diagram is done using www.planttext.com
